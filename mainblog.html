@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cover Page</title>
+    <style>
+        body {
+            background-image: url('download (27).jpg');
+            /* add a background image */
+            background-size: cover;
+            /* scale the image to cover the entire page */
+            font-family: 'Montserrat', sans-serif;
+            /* change the font family to Montserrat */
+            color: #333;
+            /* change the text color */
+            line-height: 1.5;
+            /* increase the line height for better readability */
+        }
+        
+        h1 {
+            font-size: 36px;
+            /* increase the font size of the heading */
+            color: #00698f;
+            /* change the color of the heading */
+            text-align: center;
+            /* center the heading */
+            font-weight: bold;
+            /* make the heading bold */
+            margin-bottom: 10px;
+            /* add some space below the heading */
+        }
+        
+        .tagline {
+            font-size: 18px;
+            /* increase the font size of the tagline */
+            color: #666;
+            /* change the color of the tagline */
+            margin-bottom: 20px;
+            /* add some space below the tagline */
+            font-style: italic;
+            /* make the tagline italic */
+        }
+        
+        p {
+            font-size: 16px;
+            /* increase the font size of the paragraphs */
+            color: #444;
+            /* change the color of the paragraphs */
+            margin-bottom: 20px;
+            /* add some space below the paragraphs */
+            text-align: justify;
+            /* justify the text */
+        }
+        
+        ul {
+            list-style: none;
+            /* remove the bullet points */
+            padding: 0;
+            /* remove the padding */
+            margin: 0;
+            /* remove the margin */
+        }
+        
+        li {
+            display: inline-block;
+            /* display the list items inline */
+            margin-right: 20px;
+            /* add some space between the list items */
+        }
+        
+        a {
+            color: #00698f;
+            /* change the color of the hyperlinks */
+            text-decoration: none;
+            /* remove the underline */
+        }
+        
+        a:hover {
+            color: #0099cc;
+            /* change the color of the hyperlinks on hover */
+            text-decoration: underline;
+            /* add an underline on hover */
+        }
+        
+        .header {
+            background-color: #f7f7f7;
+            /* add a light gray background to the header */
+            padding: 20px;
+            /* add some padding to the header */
+            text-align: center;
+            /* center the header content */
+        }
+        
+        .featured-image {
+            width: 100%;
+            /* make the featured image full-width */
+            height: 300px;
+            /* set the height of the featured image */
+            object-fit: cover;
+            /* scale the image to cover the entire container */
+            margin-bottom: 20px;
+            /* add some space below the featured image */
+        }
+    </style>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to my Blog !!</h1>
+        <p class="tagline">Explore the world of endless Motivaitons and Inspirational Quotes as well as unending Anime and fan. </p>
+    </div>
+    <img src="download (28).jpg" alt="Featured Image" class="featured-image">
+    <p>Click to view:</p>
+    <ul>
+        <li><a href="project1/start.html"> Anime Updates. </a></li>
+        <li><a href="index.html"> Inspirations. </a></li>
+    </ul>
+    <footer>
+        <p>&copy; Cyril's Blog</p>
+    </footer>
+
+    <!-- add a copyright notice -->
+    <script>
+        // Add a scrolling effect to the header
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f7f7f7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+    </style>
+</body>
+
+</html>
